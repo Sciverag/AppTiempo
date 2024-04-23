@@ -6,44 +6,66 @@
     android:layout_height="match_parent"
     tools:context=".activities.MainActivity">
 
-    <TextView
-        android:id="@+id/txtView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <ImageView
+        android:id="@+id/ivIconoCiudad"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        android:background="#000000"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        app:layout_constraintEnd_toEndOf="@+id/txtView"
-        app:layout_constraintStart_toStartOf="@+id/txtView"
-        app:layout_constraintTop_toBottomOf="@+id/txtView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.050000012"
         app:srcCompat="@drawable/ic_launcher_background" />
 
     <TextView
-        android:id="@+id/textViewDay"
+        android:id="@+id/tvSelector"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintStart_toStartOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        android:layout_marginTop="32dp"
+        android:text="Elige una ciudad"
+        app:layout_constraintEnd_toEndOf="@+id/ivIconoCiudad"
+        app:layout_constraintStart_toStartOf="@+id/ivIconoCiudad"
+        app:layout_constraintTop_toBottomOf="@+id/ivIconoCiudad" />
 
-    <TextView
-        android:id="@+id/textViewDayOfWeek"
+    <Spinner
+        android:id="@+id/spinnerCiudades"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="@+id/textViewDay"
-        app:layout_constraintStart_toStartOf="@+id/textViewDay"
-        app:layout_constraintTop_toBottomOf="@+id/textViewDay" />
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/ivIconoCiudad"
+        app:layout_constraintStart_toStartOf="@+id/ivIconoCiudad"
+        app:layout_constraintTop_toBottomOf="@+id/tvSelector" />
 
+    <Button
+        android:id="@+id/bttnPrevison"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="lanzarPrevision"
+        android:text="PREVISION"
+        app:layout_constraintEnd_toEndOf="@+id/ivIconoCiudad"
+        app:layout_constraintStart_toStartOf="@+id/ivIconoCiudad"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCiudades" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:alpha="50"
+        android:background="#252525"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivIconoCiudad" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:alpha="50"
+        android:background="#272727"
+        app:layout_constraintBottom_toTopOf="@+id/ivIconoCiudad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
