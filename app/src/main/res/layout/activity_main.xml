@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/colorOnPrimary"
     tools:context=".activities.MainActivity">
 
     <ImageView
@@ -15,8 +16,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.050000012"
+        app:layout_constraintTop_toBottomOf="@+id/ibttnSettings"
+        app:layout_constraintVertical_bias="0.01999998"
         app:srcCompat="@drawable/ic_launcher_background" />
 
     <TextView
@@ -25,6 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:text="Elige una ciudad"
+        android:textColor="?android:attr/textColorSecondary"
         app:layout_constraintEnd_toEndOf="@+id/ivIconoCiudad"
         app:layout_constraintStart_toStartOf="@+id/ivIconoCiudad"
         app:layout_constraintTop_toBottomOf="@+id/ivIconoCiudad" />
@@ -44,7 +46,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:onClick="lanzarPrevision"
-        android:text="PREVISION"
+        android:text="PREVISIÓN"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@+id/ivIconoCiudad"
         app:layout_constraintStart_toStartOf="@+id/ivIconoCiudad"
         app:layout_constraintTop_toBottomOf="@+id/spinnerCiudades" />
@@ -68,4 +71,29 @@
         app:layout_constraintBottom_toTopOf="@+id/ivIconoCiudad"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/bttnNuevaCiudad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="lanzarAnyadirCiudad"
+        android:text="Nueva Ubicación"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bttnPrevison"
+        app:layout_constraintVertical_bias="0.87" />
+
+    <ImageButton
+        android:id="@+id/ibttnSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="?attr/colorSecondaryVariant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_action_name" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

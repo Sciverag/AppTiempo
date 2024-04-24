@@ -13,8 +13,6 @@ import com.example.myweatherbase.base.BaseActivity;
 import com.example.myweatherbase.base.CallInterface;
 import com.example.myweatherbase.base.MyRecyclerViewAdapter;
 
-import okhttp3.Call;
-
 public class PrevisionActivity extends BaseActivity implements CallInterface{
     private RecyclerView rvTiempo;
     private MyRecyclerViewAdapter mrva;

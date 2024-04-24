@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/clItem"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="?attr/colorOnPrimary">
 
     <ImageView
         android:id="@+id/ivIcon"
@@ -24,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:textColor="?android:attr/textColorSecondary"
         android:textSize="14sp"
         android:textStyle="normal"
         app:layout_constraintBottom_toBottomOf="@+id/tvDayOfWeek"
@@ -38,7 +40,7 @@
         android:layout_height="23dp"
         android:layout_marginStart="16dp"
         android:text="TextView"
-        android:textColor="#000000"
+        android:textColor="?android:attr/textColorPrimary"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/ivIcon"
@@ -51,6 +53,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
+        android:textColor="?android:attr/textColorSecondary"
         app:layout_constraintBottom_toBottomOf="@+id/ivIcon"
         app:layout_constraintStart_toStartOf="@+id/tvDayOfWeek"
         app:layout_constraintTop_toBottomOf="@+id/tvDayOfWeek"
@@ -62,7 +65,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:text="TextView"
-        android:textColor="#000000"
+        android:textColor="?android:attr/textColorPrimary"
         android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/tvDay"
@@ -77,6 +80,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginBottom="24dp"
         android:text="TextView"
+        android:textColor="?android:attr/textColorSecondary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/tvDayOfWeek"
         app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
@@ -86,6 +90,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:textColor="?android:attr/textColorSecondary"
         app:layout_constraintBottom_toBottomOf="@+id/tvTemp"
         app:layout_constraintEnd_toEndOf="@+id/tvDay"
         app:layout_constraintStart_toStartOf="@+id/tvDay"
@@ -96,6 +101,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="TextView"
+        android:textColor="?android:attr/textColorSecondary"
         app:layout_constraintBottom_toBottomOf="@+id/tvTempMax"
         app:layout_constraintEnd_toEndOf="@+id/tvHora"
         app:layout_constraintStart_toStartOf="@+id/tvHora"
